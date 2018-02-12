@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GraphQL Express</title>
+    <link href="bootstrap.min.css" rel="stylesheet"
+</head>
+
+<body style="padding:40px;">
+    <hr>
+    <h1>Testing a simple GraphQL Server</h2>
+        <hr>        
+        <h2>Enter product details</h2>
+        <form action="/products" method="POST">
+            <div className="row col-sm-10">                
+                <input type="text" placeholder="name" name="name">
+            </div>
+            <div className="row col-sm-10">
+                <input type="text" placeholder="code" name="code">
+            </div>
+            <div className="row col-sm-10">
+                <input type="text" placeholder="vendor" name="vendor">
+            </div>
+            <div className="row col-sm-10">
+                <input type="text" placeholder="sku" name="sku">
+            </div>
+            <div className="row col-sm-10">
+                <input type="text" placeholder="status" name="status">
+            </div>
+            <div className="row col-sm-10">
+                <input type="text" placeholder="addedBy" name="addedBy">
+            </div>
+            <div className="row col-sm-10">
+                <input type="text" placeholder="quantity" name="quantity">
+            </div>
+            <div className="row col-sm-10">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <hr>
+        <h3>Test GraphQL</h3>
+        <hr>
+        <div>
+            <a href="/graphql?query={products(vendor:%22Lenovo%22){sku,status}}">GraphQL Query Test</a>
+        </div>
+</body>
+
+</html>

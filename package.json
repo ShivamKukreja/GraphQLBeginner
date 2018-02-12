@@ -1,0 +1,21 @@
+{
+  "name": "GraphQLBeginnerSample",
+  "version": "1.0.0",
+  "description": "GraphQL Mongo Node Express",
+  "main": "bin/www",
+  "scripts": {
+    "start": "nodemon bin/www"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.13.0",
+    "mongoose": "^5.0.0-rc1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  }
+}
